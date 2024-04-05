@@ -1,0 +1,45 @@
+.slide{
+   animation: anime 30s  infinite linear;
+ 
+ 
+}
+.parent:hover>hgroup{
+    animation-play-state: paused;
+}
+/* .section-6{
+    height: 70% !important;
+} */
+
+.fig-slide2{
+ 
+    animation: left 25s infinite linear;
+}
+.fig-slide1{
+ 
+    animation: right 35s infinite linear;
+}
+.accordion.active .accordion-body{
+    display: block;
+}
+/* .circle{
+    overflow-clip-margin: content box;
+    overflow:;
+} */
+@keyframes anime {
+    from { transform: translateX(0)}
+    100%{
+transform: translateX(-100%); 
+    }
+}
+@keyframes left{
+    from{transform: translateX(0);}
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes right{
+    from{transform: translateX(-130%);}
+    100%{
+        transform: translateX(0%);
+    }
+}
